@@ -1,0 +1,707 @@
+{
+ "site": [
+  [
+   -130,
+   150
+  ],
+  [
+   -130,
+   -150
+  ],
+  [
+   110,
+   -150
+  ],
+  [
+   110,
+   150
+  ]
+ ],
+ "area_acres": 17.8,
+ "gate": [
+  112,
+  0
+ ],
+ "roads": [
+  {
+   "id": "sector",
+   "name": "24 m sector road",
+   "axis": "z",
+   "at": 125,
+   "a": -1500,
+   "b": 1500,
+   "w": 24,
+   "ext": true
+  },
+  {
+   "id": "east",
+   "name": "18 m sector road",
+   "axis": "x",
+   "at": -168,
+   "a": -1500,
+   "b": 1500,
+   "w": 18,
+   "ext": true
+  },
+  {
+   "id": "west",
+   "name": "12 m road",
+   "axis": "x",
+   "at": 200,
+   "a": -1500,
+   "b": 1500,
+   "w": 12,
+   "ext": true
+  },
+  {
+   "id": "north",
+   "name": "12 m road",
+   "axis": "z",
+   "at": -190,
+   "a": -1500,
+   "b": 1500,
+   "w": 12,
+   "ext": true
+  },
+  {
+   "id": "spine",
+   "name": "18 m main avenue",
+   "axis": "x",
+   "at": 0,
+   "a": -130,
+   "b": 125,
+   "w": 18,
+   "ext": false
+  },
+  {
+   "id": "r1",
+   "name": "12 m road",
+   "axis": "z",
+   "at": 62,
+   "a": -150,
+   "b": 150,
+   "w": 12,
+   "ext": false
+  },
+  {
+   "id": "r2",
+   "name": "12 m road",
+   "axis": "z",
+   "at": -2,
+   "a": -150,
+   "b": 150,
+   "w": 12,
+   "ext": false
+  },
+  {
+   "id": "r3",
+   "name": "12 m road",
+   "axis": "z",
+   "at": -66,
+   "a": -150,
+   "b": 150,
+   "w": 12,
+   "ext": false
+  },
+  {
+   "id": "s1",
+   "name": "9 m road",
+   "axis": "x",
+   "at": -76,
+   "a": -66,
+   "b": 62,
+   "w": 9,
+   "ext": false
+  },
+  {
+   "id": "s2",
+   "name": "9 m road",
+   "axis": "x",
+   "at": 76,
+   "a": -66,
+   "b": -2,
+   "w": 9,
+   "ext": false
+  },
+  {
+   "id": "highway",
+   "name": "National Highway",
+   "axis": "z",
+   "at": 440,
+   "a": -1500,
+   "b": 1500,
+   "w": 26,
+   "ext": true
+  }
+ ],
+ "greens": [
+  {
+   "kind": "park",
+   "name": "Central Park",
+   "poly": [
+    [
+     8,
+     146
+    ],
+    [
+     8,
+     13
+    ],
+    [
+     52,
+     13
+    ],
+    [
+     52,
+     146
+    ]
+   ]
+  },
+  {
+   "kind": "strip",
+   "name": "Green strip",
+   "poly": [
+    [
+     24.57,
+     -9
+    ],
+    [
+     24.57,
+     -71.5
+    ],
+    [
+     35.43,
+     -71.5
+    ],
+    [
+     35.43,
+     -9
+    ]
+   ]
+  },
+  {
+   "kind": "strip",
+   "name": "Green strip",
+   "poly": [
+    [
+     24.57,
+     -80.5
+    ],
+    [
+     24.57,
+     -150
+    ],
+    [
+     35.43,
+     -150
+    ],
+    [
+     35.43,
+     -80.5
+    ]
+   ]
+  },
+  {
+   "kind": "strip",
+   "name": "Green strip",
+   "poly": [
+    [
+     -41.71,
+     150
+    ],
+    [
+     -41.71,
+     80.5
+    ],
+    [
+     -26.29,
+     80.5
+    ],
+    [
+     -26.29,
+     150
+    ]
+   ]
+  },
+  {
+   "kind": "strip",
+   "name": "Green strip",
+   "poly": [
+    [
+     -41.71,
+     71.5
+    ],
+    [
+     -41.71,
+     9
+    ],
+    [
+     -26.29,
+     9
+    ],
+    [
+     -26.29,
+     71.5
+    ]
+   ]
+  },
+  {
+   "kind": "strip",
+   "name": "Green strip",
+   "poly": [
+    [
+     -41.71,
+     -9
+    ],
+    [
+     -41.71,
+     -71.5
+    ],
+    [
+     -26.29,
+     -71.5
+    ],
+    [
+     -26.29,
+     -9
+    ]
+   ]
+  },
+  {
+   "kind": "strip",
+   "name": "Green strip",
+   "poly": [
+    [
+     -41.71,
+     -80.5
+    ],
+    [
+     -41.71,
+     -150
+    ],
+    [
+     -26.29,
+     -150
+    ],
+    [
+     -26.29,
+     -80.5
+    ]
+   ]
+  },
+  {
+   "kind": "strip",
+   "name": "Green lane",
+   "poly": [
+    [
+     83.24,
+     150
+    ],
+    [
+     83.24,
+     9
+    ],
+    [
+     91.71,
+     9
+    ],
+    [
+     91.71,
+     150
+    ]
+   ]
+  },
+  {
+   "kind": "strip",
+   "name": "Green lane",
+   "poly": [
+    [
+     83.24,
+     -9
+    ],
+    [
+     83.24,
+     -150
+    ],
+    [
+     91.71,
+     -150
+    ],
+    [
+     91.71,
+     -9
+    ]
+   ]
+  },
+  {
+   "kind": "plaza",
+   "name": "Landscaped plaza",
+   "poly": [
+    [
+     91.71,
+     150
+    ],
+    [
+     91.71,
+     100
+    ],
+    [
+     110,
+     100
+    ],
+    [
+     110,
+     150
+    ]
+   ]
+  },
+  {
+   "kind": "plaza",
+   "name": "Landscaped plaza",
+   "poly": [
+    [
+     91.71,
+     -100
+    ],
+    [
+     91.71,
+     -150
+    ],
+    [
+     110,
+     -150
+    ],
+    [
+     110,
+     -100
+    ]
+   ]
+  },
+  {
+   "kind": "belt",
+   "name": "Green belt",
+   "poly": [
+    [
+     -130,
+     -9
+    ],
+    [
+     -130,
+     -150
+    ],
+    [
+     -99.43,
+     -150
+    ],
+    [
+     -99.43,
+     -9
+    ]
+   ]
+  },
+  {
+   "kind": "belt",
+   "name": "Green belt",
+   "poly": [
+    [
+     -130,
+     150
+    ],
+    [
+     -130,
+     9
+    ],
+    [
+     -104,
+     9
+    ],
+    [
+     -104,
+     150
+    ]
+   ]
+  }
+ ],
+ "amenities": [
+  {
+   "id": "park",
+   "name": "Central Park",
+   "kind": "park",
+   "desc": "1.4-acre park with walking loop, fountain & gazebo",
+   "poly": [
+    [
+     8,
+     146
+    ],
+    [
+     8,
+     13
+    ],
+    [
+     52,
+     13
+    ],
+    [
+     52,
+     146
+    ]
+   ],
+   "center": [
+    30.0,
+    79.5
+   ],
+   "h": 0,
+   "cam": [
+    70,
+    55,
+    60
+   ]
+  },
+  {
+   "id": "club",
+   "name": "Community Centre",
+   "kind": "club",
+   "desc": "Banquet hall, gym and indoor games",
+   "poly": [
+    [
+     -102,
+     126
+    ],
+    [
+     -102,
+     78
+    ],
+    [
+     -76,
+     78
+    ],
+    [
+     -76,
+     126
+    ]
+   ],
+   "center": [
+    -89.0,
+    102.0
+   ],
+   "h": 9,
+   "cam": [
+    -40,
+    30,
+    36
+   ]
+  },
+  {
+   "id": "temple",
+   "name": "Temple",
+   "kind": "temple",
+   "desc": "Neighbourhood temple with courtyard",
+   "poly": [
+    [
+     -100,
+     66
+    ],
+    [
+     -100,
+     42
+    ],
+    [
+     -78,
+     42
+    ],
+    [
+     -78,
+     66
+    ]
+   ],
+   "center": [
+    -89.0,
+    54.0
+   ],
+   "h": 12,
+   "cam": [
+    -34,
+    24,
+    30
+   ]
+  },
+  {
+   "id": "creche",
+   "name": "Creche & Play School",
+   "kind": "creche",
+   "desc": "Day-care and nursery for residents",
+   "poly": [
+    [
+     -100,
+     34
+    ],
+    [
+     -100,
+     14
+    ],
+    [
+     -78,
+     14
+    ],
+    [
+     -78,
+     34
+    ]
+   ],
+   "center": [
+    -89.0,
+    24.0
+   ],
+   "h": 6,
+   "cam": [
+    -30,
+    22,
+    30
+   ]
+  },
+  {
+   "id": "belt",
+   "name": "Green Belt & Jogging Trail",
+   "kind": "track",
+   "desc": "Tree-lined trail along the north boundary",
+   "poly": [
+    [
+     -130,
+     150
+    ],
+    [
+     -130,
+     -150
+    ],
+    [
+     -104,
+     -150
+    ],
+    [
+     -104,
+     150
+    ]
+   ],
+   "center": [
+    -117.0,
+    -0.0
+   ],
+   "h": 0,
+   "cam": [
+    -50,
+    46,
+    70
+   ]
+  },
+  {
+   "id": "gate",
+   "name": "Gated Entry & Security",
+   "kind": "gate",
+   "desc": "24\u00d77 guarded gate with boom barrier and CCTV",
+   "poly": [
+    [
+     108,
+     12
+    ],
+    [
+     108,
+     -12
+    ],
+    [
+     125,
+     -12
+    ],
+    [
+     125,
+     12
+    ]
+   ],
+   "center": [
+    116.5,
+    -0.0
+   ],
+   "h": 0,
+   "cam": [
+    40,
+    14,
+    34
+   ]
+  },
+  {
+   "id": "sco",
+   "name": "Commercial Street (SCOs)",
+   "kind": "mall",
+   "desc": "Shop-cum-office plots on the 24 m sector road",
+   "poly": [
+    [
+     92,
+     100
+    ],
+    [
+     92,
+     -100
+    ],
+    [
+     110,
+     -100
+    ],
+    [
+     110,
+     100
+    ]
+   ],
+   "center": [
+    101.0,
+    -0.0
+   ],
+   "h": 0,
+   "cam": [
+    70,
+    36,
+    50
+   ]
+  }
+ ],
+ "wall": [
+  [
+   [
+    -130,
+    150
+   ],
+   [
+    -130,
+    -150
+   ]
+  ],
+  [
+   [
+    -130,
+    -150
+   ],
+   [
+    110,
+    -150
+   ]
+  ],
+  [
+   [
+    -130,
+    150
+   ],
+   [
+    110,
+    150
+   ]
+  ],
+  [
+   [
+    91.71,
+    150
+   ],
+   [
+    110,
+    150
+   ]
+  ]
+ ]
+}

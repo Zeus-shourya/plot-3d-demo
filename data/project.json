@@ -1,0 +1,19 @@
+{
+  "name": "Sunrise Enclave",
+  "tagline": "Gated plotted township · Demo project",
+  "location": "Sonipat, Haryana",
+  "lat": 28.99,
+  "lng": 77.02,
+  "whatsapp": "",
+  "showPrices": true,
+  "pollSeconds": 30,
+
+  "landmarks": [
+    { "id": "bank",     "name": "Bank & ATM",               "kind": "bank",     "km": 0.3, "min": 1,  "pos": [150, 30],    "route": [[110, 0], [125, 0], [125, 30]] },
+    { "id": "school",   "name": "Public School",            "kind": "school",   "km": 1.1, "min": 4,  "pos": [300, -190],  "route": [[110, 0], [125, 0], [125, -168], [300, -168]] },
+    { "id": "mall",     "name": "Shopping Mall",            "kind": "mall",     "km": 1.6, "min": 5,  "pos": [150, -360],  "route": [[110, 0], [125, 0], [125, -360]] },
+    { "id": "hospital", "name": "Multispeciality Hospital", "kind": "hospital", "km": 2.2, "min": 7,  "pos": [150, 330],   "route": [[110, 0], [125, 0], [125, 330]] },
+    { "id": "station",  "name": "Railway Station",          "kind": "train",    "km": 3.4, "min": 10, "pos": [-350, 222],  "route": [[110, 0], [125, 0], [125, 200], [-350, 200]] },
+    { "id": "highway",  "name": "National Highway",         "kind": "highway",  "km": 4.8, "min": 9,  "pos": [440, -168],  "route": [[110, 0], [125, 0], [125, -168], [440, -168]] }
+  ]
+}

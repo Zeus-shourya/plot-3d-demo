@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sunrise Enclave · Interactive Plot Map</title>
+<meta name="description" content="Explore the plotted township in 3D: live plot availability, sizes, facing, corner and park plots, prices, and a sample home on any plot.">
+<meta name="theme-color" content="#0d1220">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="stage"></div>
+
+<div id="loader">
+  <div class="ld-mark">S</div>
+  <div class="ld-name" data-bind="name">Sunrise Enclave</div>
+  <div class="ld-bar"><i id="ldBar"></i></div>
+  <div class="ld-txt" id="ldTxt">Marking the plots…</div>
+</div>
+
+<header class="topbar">
+  <div class="brand glass">
+    <div class="brand-mark">S</div>
+    <div class="brand-txt"><b data-bind="name">Sunrise Enclave</b><span data-bind="tagline">Demo project</span></div>
+  </div>
+  <div class="top-actions">
+    <span class="live glass" title="Plot availability syncs automatically"><i></i><span id="liveTxt">Live inventory</span></span>
+    <button class="icon-btn glass" id="btnPlan" title="2D plan / 3D view" aria-label="Toggle plan view"></button>
+    <button class="icon-btn glass" id="btnReset" title="Reset view" aria-label="Reset view"></button>
+    <button class="icon-btn glass" id="btnFull" title="Full screen" aria-label="Full screen"></button>
+  </div>
+</header>
+
+<div class="compass glass" id="compass" title="North"><div class="needle"><span>N</span></div></div>
+
+<aside class="panel glass" id="panel">
+  <section data-panel="explore" class="active">
+    <h2>Explore the township</h2>
+    <p class="muted hint-desktop">Drag to orbit · scroll to zoom · right-drag to pan</p>
+    <p class="muted hint-touch">One finger to orbit · pinch to zoom · two fingers to pan</p>
+    <div class="view-grid" id="viewGrid"></div>
+    <label class="switch"><input type="checkbox" id="tgColours" checked><span></span>Availability colours</label>
+    <label class="switch"><input type="checkbox" id="tgHomes"><span></span>Show sample homes on sold plots</label>
+    <label class="switch"><input type="checkbox" id="tgNumbers" checked><span></span>Plot numbers</label>
+    <button class="btn-wide primary" id="btnTour" style="margin-top:14px"><span class="i-play"></span><span>Start presentation tour</span></button>
+    <div class="facts" id="facts"></div>
+  </section>
+
+  <section data-panel="plots">
+    <h2>Find your plot</h2>
+    <div class="counts" id="counts"></div>
+    <div class="row-label">Plot size</div>
+    <div class="chips" id="sizeChips"></div>
+    <div class="row-label">Facing</div>
+    <div class="chips" id="faceChips"></div>
+    <div class="row-label">Budget <span class="muted" id="budgetLbl"></span></div>
+    <input type="range" class="budget" id="budget" aria-label="Maximum budget">
+    <label class="switch"><input type="checkbox" id="fCorner"><span></span>Corner plots only</label>
+    <label class="switch"><input type="checkbox" id="fPark"><span></span>Park-facing only</label>
+    <label class="switch"><input type="checkbox" id="fAvail" checked><span></span>Available only</label>
+    <div class="row-label">Matching plots <span class="muted" id="matchCount"></span></div>
+    <div class="results" id="results"></div>
+    <div class="legend"><span class="lg available"></span>Available<span class="lg hold"></span>On hold<span class="lg booked"></span>Sold</div>
+  </section>
+
+  <section data-panel="nearby">
+    <h2>Location advantages</h2>
+    <p class="muted">Tap a place to trace the route from the main gate.</p>
+    <div class="list" id="nearList"></div>
+    <p class="fine">Road distances from the main gate. 3D surroundings are illustrative, not to scale.</p>
+  </section>
+
+  <section data-panel="amenities">
+    <h2>Amenities</h2>
+    <p class="muted">Tap to fly to each amenity.</p>
+    <div class="list" id="amenList"></div>
+  </section>
+</aside>
+
+<div class="unit-card glass" id="card" hidden>
+  <div class="uc-head">
+    <div>
+      <div class="uc-id" id="cId">Plot B-12</div>
+      <span class="badge" id="cStatus">Available</span>
+    </div>
+    <button class="icon-btn small" id="cClose" aria-label="Close"></button>
+  </div>
+  <div class="feat" id="cFeat"></div>
+  <dl class="uc-grid" id="cGrid"></dl>
+  <div class="uc-actions">
+    <button class="btn-wide" id="cHome"></button>
+    <button class="btn-wide ghost" id="cStand"></button>
+    <a class="btn-wide primary" id="cEnquire" target="_blank" rel="noopener"></a>
+  </div>
+  <p class="fine" id="cFine">Indicative prices for this demo. Sample home is illustrative (G+1 / G+2 within setbacks).</p>
+</div>
+
+<div class="flat-bar glass" id="standBar" hidden>
+  <span id="standTxt">Standing at plot</span>
+  <button class="pill-btn primary" id="standBack">Back to map</button>
+</div>
+
+<nav class="dock glass" id="dock" aria-label="Sections"></nav>
+<div class="toast" id="toast" role="status"></div>
+<noscript><p style="padding:24px;color:#fff">This 3D map needs JavaScript and WebGL.</p></noscript>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
